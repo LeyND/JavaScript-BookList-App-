@@ -1,6 +1,134 @@
 $body-color: slateblue;
+$color-primary: lightblue;
 
-body {
-  color: $body-color;
+html, body {
+  color: black;
   font-family: sans-serif;
+  font-size: 62.5%;
+  line-height:1.5rem;
+  width:100%;
+  height:100%;
+  background-color: rgb(173, 173, 173);
+}
+
+.container {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgb(141, 140, 140);
+  padding:2rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 100px 1px;
+  z-index: 2;
+  background-color: white;
+}
+
+h3 {
+  font-size: 5rem;
+  text-align: center;
+}
+span {
+  color: $color-primary;
+}
+
+.form-group {
+  display:flex; 
+  flex-direction: column;
+}
+.form-group label {
+  font-size:2rem;
+  line-height: 2;
+  color: $color-primary;
+}
+
+.form-group input {
+  border:none;
+  border-bottom:1px solid grey;
+  outline: none;
+}
+
+
+.btn {
+  width:100%;
+  margin-top: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: none;
+  background-color: rgb(4, 180, 4);
+  color: white;
+  margin-bottom: 1rem;
+}
+.btn-danger {
+  padding:0.8rem;
+  background-color: red;
+  text-decoration: none;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid rgb(100, 209, 100);
+}
+
+thead th:nth-child(1) {
+  width: 25%;
+}
+
+thead th:nth-child(2) {
+  width: 25%;
+}
+
+thead th:nth-child(3) {
+  width: 25%;
+}
+
+thead th:nth-child(4) {
+  width: 25%;
+}
+
+thead th {
+  font-size: 1.5rem;
+}
+
+table thead th{
+  padding-top:1rem;
+  padding-bottom:1rem;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+td {
+  border:1px solid white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color:rgb(211, 205, 205);
+}
+
+tbody tr td {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.alert {
+  padding:2rem; 
+  color:white; 
+  font-size:1.6rem;
+  font-weight: bold;
+  margin-bottom:5px;
+}
+
+.alert--success {
+  background-color: rgb(87, 216, 87);
+}
+
+.alert--danger {
+  background-color: rgb(223, 101, 101);
 }
